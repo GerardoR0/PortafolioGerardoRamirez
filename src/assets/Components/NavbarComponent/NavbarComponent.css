@@ -1,0 +1,98 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #fff;
+    position: relative;
+    width: 100%;
+  }
+
+  .logo {
+    font-family: 'Poppins', sans-serif, system-ui;
+    display: flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  .logo-main {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .logo-accent {
+    color: #06B6D4;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-links li:hover {
+    color: #06B6D4;
+  }
+
+  /* Boton Hamburguesa */
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+  }
+
+  .menu-icon span{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+ /* Media Queries para Laptops / Tablets (máximo 1024px) */
+ @media screen and (max-width: 1024px) {
+    .navbar{
+        padding: 1rem 1.5rem;
+    }
+    .navbar-links{
+        gap: 1rem;
+    }
+ }
+
+ /* Media Queries para Celulares (máximo 768px) */
+ @media screen and (max-width: 768px) {
+    .menu-icon{
+        display: flex;
+    }
+    .navbar-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 1.5rem 0;
+        display: none; 
+    }
+    .navbar-links.open{
+        display: flex;
+    }
+    .logo-main, .logo-accent{
+        font-size: 1.5rem;
+    }
+ }
+
+    
