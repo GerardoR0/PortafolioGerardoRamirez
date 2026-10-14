@@ -1,23 +1,22 @@
-import React, { useState } from 'react'
-import './NavbarComponent.css'
+import React, { useState } from "react";
+import "./NavbarComponent.css";
 
 const NavbarComponent = () => {
-
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='navbar'>
-      <div className='logo'>
-        <span className='logo-main'>Gera</span>
-        <span className='logo-accent'>.dev</span>
+    <nav className="navbar">
+      <div className="logo">
+        <span className="logo-main">Gera</span>
+        <span className="logo-accent">.dev</span>
       </div>
       {/*menu hamburguesa*/}
-      <div className='menu-icon' onClick={() => setIsOpen(!isOpen)}>
+      <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <ul className={`navbar-links ${isOpen ? 'open' : ''}`}>
+      <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
         <li>Sobre mi</li>
         <li>Educacion</li>
         <li>Proyectos</li>
@@ -26,8 +25,7 @@ const NavbarComponent = () => {
         <li>Contacto</li>
       </ul>
     </nav>
+  );
+};
 
-  )
-}
-
-export default NavbarComponent
+export default NavbarComponent;

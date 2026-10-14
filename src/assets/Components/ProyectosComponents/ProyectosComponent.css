@@ -1,0 +1,190 @@
+.projects-section {
+    background-color: #0d1117;
+    color: #fff;
+    padding: 100px 8%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .projects-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+  }
+  
+  .projects-pill {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #8b5cf6;
+    color: #06b6d4;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  .projects-title {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #ffffff;
+  }
+  
+  .projects-subtitle {
+    color: #94a3b8;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Grid de Proyectos */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Tarjeta de Proyecto */
+  .project-card {
+    background: rgba(22, 27, 34, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(6, 182, 212, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Barra superior macOS */
+  .mac-bar {
+    background-color: #1a1e24;
+    padding: 12px 16px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .mac-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .mac-dot.close { background-color: #ff5f56; }
+  .mac-dot.minimize { background-color: #ffbd2e; }
+  .mac-dot.expand { background-color: #27c93f; }
+  
+  /* Contenedor de Imagen */
+  .project-image-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .project-card:hover .project-image {
+    transform: scale(1.05);
+  }
+  
+  /* Contenido de la tarjeta */
+  .project-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .project-content h3 {
+    font-size: 22px;
+    color: #fff;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+  }
+  
+  .project-content p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+  }
+  
+  /* Etiquetas (Tags) */
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  
+  .project-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: #cbd5e1;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  /* Enlaces */
+  .project-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .project-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #06b6d4; /* Color cyan */
+    transition: color 0.2s ease;
+  }
+  
+  .project-link:hover {
+    color: #fff;
+  }
+  
+  .github-link {
+    color: #94a3b8;
+  }
+  
+  /* ==========================================
+     MEDIA QUERIES
+     ========================================== */
+  
+  /* Laptop y Tablets (máximo 1024px) */
+  @media (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+  }
+  
+  /* Celulares (máximo 768px) */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr; /* 1 columna */
+    }
+    
+    .projects-section {
+      padding: 60px 20px;
+    }
+  }
