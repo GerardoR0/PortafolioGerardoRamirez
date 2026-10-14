@@ -13,7 +13,7 @@ const ProyectosComponent = () => {
       tags: ["React", "Node.js", "MongoDB"],
       image: miPortafolio, 
       linkUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/GerardoR0/PortafolioGerardoRamirez",
     },
     {
       title: "Generador de Citas",
@@ -21,8 +21,8 @@ const ProyectosComponent = () => {
         "Plataforma web para reserva y gestión de citas. Implementa lógica de agenda dinámica y consumo de endpoints optimizados para respuesta inmediata.",
       tags: ["JavaScript", "Vue.js", "React"],
       image: generadorCitas, 
-      linkUrl: "#",
-      githubUrl: "#",
+      linkUrl: "https://citas-lac.vercel.app",
+      githubUrl: "https://github.com/GerardoR0/Citas",
     },
     {
       title: "Consumo de API",
@@ -30,8 +30,8 @@ const ProyectosComponent = () => {
         "Aplicación web interactiva que consume la API de Rick and Morty para explorar personajes, episodios y ubicaciones. Implementa búsqueda en tiempo real, paginación dinámica, filtrado por estado/especie y manejo de estados asíncronos.",
       tags: ["React", "JavaScript"],
       image: rickAndMorty,
-      linkUrl: "#",
-      githubUrl: "#",
+      linkUrl: "https://ejercicio-frontend.vercel.app",
+      githubUrl: "https://github.com/GerardoR0/EjercicioFrontend",
     },
   ];
 

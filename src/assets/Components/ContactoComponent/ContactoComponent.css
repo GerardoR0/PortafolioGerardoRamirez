@@ -210,6 +210,25 @@
     box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4);
   }
   
+/* Personalización de SweetAlert2 */
+.custom-swal-popup {
+  border: 1px solid rgba(6, 182, 212, 0.3) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+}
+
+.custom-swal-btn {
+  background: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%) !important;
+  color: #0d1117 !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  padding: 12px 30px !important;
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4) !important;
+}
+
+.custom-swal-btn:focus {
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.3) !important;
+}
   /* ==========================================
      MEDIA QUERIES (Responsivo)
      ========================================== */

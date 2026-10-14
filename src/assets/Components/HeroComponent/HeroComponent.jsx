@@ -21,7 +21,7 @@ const HeroComponent = () => {
           escalables y con un diseño impecable. De extremo a extremo, del
           servidor a la interfaz del usuario.
         </p>
-        <a href="#contact" className="contact-button">
+        <a href="#contacto" className="contact-button">
           Contáctame <span>&rarr;</span>
         </a>
       </div>
