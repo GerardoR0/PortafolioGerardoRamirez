@@ -1,0 +1,68 @@
+.footer-section {
+    background-color: #0d1117;
+    color: #94a3b8;
+    padding: 40px 8%;
+    font-family: sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Marca */
+  .footer-brand {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .brand-name {
+    color: #fff;
+  }
+  
+  .brand-dot {
+    color: #06b6d4; /* Color cian característico de tu portafolio */
+  }
+  
+  /* Mensaje Central */
+  .footer-message {
+    font-size: 14px;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .heart-icon {
+    color: #ef4444;
+    font-size: 14px;
+  }
+  
+  /* Derechos de autor */
+  .footer-rights {
+    font-size: 13px;
+    color: #64748b;
+  }
+  
+  /* ==========================================
+     MEDIA QUERIES (Responsivo para celulares)
+     ========================================== */
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    
+    .footer-section {
+      padding: 30px 20px;
+    }
+  }

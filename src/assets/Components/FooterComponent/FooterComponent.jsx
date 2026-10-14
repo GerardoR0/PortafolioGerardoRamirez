@@ -1,9 +1,27 @@
-import React from 'react'
-
+import React from "react";
+import "./FooterComponent.css";
 const FooterComponent = () => {
   return (
-    <div>FooterComponent</div>
-  )
-}
+    <footer className="footer-section">
+      <div className="footer-container">
+        {/* Logo / Marca */}
+        <div className="footer-brand">
+          <span className="brand-name">Gera</span>
+          <span className="brand-dot">.dev</span>
+        </div>
 
-export default FooterComponent
+        {/* Mensaje central */}
+        <div className="footer-message">
+          Hecho con <span className="heart-icon">❤️</span> y código
+        </div>
+
+        {/* Derechos reservados */}
+        <div className="footer-rights">
+          © 2026 Gerardo Ramírez. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default FooterComponent;
