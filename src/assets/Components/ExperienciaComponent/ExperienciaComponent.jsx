@@ -6,7 +6,7 @@ const ExperienciaComponent = () => {
     {
       period: "2023 — 2025",
       title: "Frontend Developer",
-      company: "FasadaTec",
+      company: "FasdaTec",
       description:
         "Diseñé interfaces centradas en la experiencia de usuario (UX/UI) utilizando Figma, creando prototipos interactivos y flujos de navegación para aplicaciones web.",
     },

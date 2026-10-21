@@ -17,12 +17,12 @@ const NavbarComponent = () => {
       </div>
 
       <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
-        <li>Sobre mi</li>
-        <li>Educacion</li>
-        <li>Proyectos</li>
-        <li>Herramientas</li>
-        <li>Experiencia</li>
-        <li>Contacto</li>
+        <li><a href="#about">Sobre mi</a></li>
+        <li><a href="#education">Educacion</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Herramientas</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   );

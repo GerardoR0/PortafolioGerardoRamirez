@@ -42,7 +42,13 @@
   
   .navbar-links li {
     cursor: pointer;
+  }
+
+  .navbar-links li a {
+    color: #fff; 
+    text-decoration: none; 
     transition: color 0.3s ease;
+    display: block; 
   }
 
   .navbar-links li:hover {
