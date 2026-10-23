@@ -2,15 +2,15 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(13, 17, 23, 0.3); /* Capa muy ligera */
-    backdrop-filter: blur(8px); /* Aplica el desenfoque al fondo que pasa por detrás */
-    z-index: 10; /* Asegura que los enlaces queden sobre el fondo */
+    background: rgba(13, 17, 23, 0.3); 
+    backdrop-filter: blur(8px); 
+    z-index: 1000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     color: #fff;
-    position: absolute;
+    position: fixed;
     width: 100%;
   }
 
