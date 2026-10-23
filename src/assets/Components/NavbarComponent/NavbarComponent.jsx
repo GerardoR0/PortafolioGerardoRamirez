@@ -3,6 +3,11 @@ import "./NavbarComponent.css";
 
 const NavbarComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -17,12 +22,12 @@ const NavbarComponent = () => {
       </div>
 
       <ul className={`navbar-links ${isOpen ? "open" : ""}`}>
-        <li><a href="#about">Sobre mi</a></li>
-        <li><a href="#education">Educacion</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#skills">Herramientas</a></li>
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li onClick={handleCloseMenu}><a href="#about">Sobre mi</a></li>
+        <li onClick={handleCloseMenu}><a href="#education">Educacion</a></li>
+        <li onClick={handleCloseMenu}><a href="#projects">Proyectos</a></li>
+        <li onClick={handleCloseMenu}><a href="#skills">Herramientas</a></li>
+        <li onClick={handleCloseMenu}><a href="#experience">Experiencia</a></li>
+        <li onClick={handleCloseMenu}><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   );
